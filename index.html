@@ -326,7 +326,7 @@ actv.forEach(function(r){
 });
 var aggFullArr=aggArr.map(function(a){return aggFull[a.tipo];}).filter(Boolean);
 aggFullArr.forEach(function(r){
-  var dpct=r.prcn?r.desv/r.prcn:0;
+  var dpct=r.neto?r.desv/r.neto:0;
   var cu=r.desv!==0?Math.abs(r.desvio/r.desv):0;
   var tr=document.createElement('tr');
   tr.innerHTML='<td>'+r.tipo+'</td><td>'+r.cons+'</td>'
